@@ -1,0 +1,113 @@
+.form{
+    display:flex;
+    flex-direction: row;
+    padding-left:10vw;
+     -webkit-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.21); 
+    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.21); 
+    width: 350px;
+    padding: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(to bottom, #CE5937, #AD45A9 62%  ) 1 100%;
+      margin: auto;
+}
+
+.buyBtn{
+    width:250px !important;
+    font-size: 14pt;
+}
+
+form > h3{
+    padding-bottom: 24px;
+}
+
+input{
+    display:flex;
+    margin-bottom:20px;
+    padding: 5px;
+    border-radius: 10px;
+    width:150%;
+    box-shadow: inset 0px -1px 3px 0px rgba(50, 50, 50, 0.75);
+}
+
+label{
+    font-weight: 700;
+}
+
+h1{
+    padding:40px;
+    text-align: center;
+}
+
+.boxBuy{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > .CheckoutBtn{
+    margin:10px;
+}
+
+.CheckoutBtn{
+    background: linear-gradient(135deg, #CE5937 0%, #AD45A9 62%, #40235A 100%);
+    color:white;
+    width:100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    -webkit-box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.21); 
+    box-shadow: 5px 5px 16px 5px rgba(0,0,0,0.21);
+    font-weight: bolder;
+}
+
+button:hover{
+    box-shadow: none;
+}
+
+.productsCheckout{
+border: 1px solid rgb(64, 35, 90);
+padding:20px;
+justify-content: space-around;
+width: 27%;
+padding: 70px;
+    margin: 60px auto 0 auto;
+}
+
+.total{
+    font-weight: bolder;
+}
+
+.cartProduct{
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.checkOutButton{
+margin-left:70px;
+}
+
+.deleteBtn{
+    border-radius: 83px;
+    color: white;
+    font-size: 12pt;
+    padding: 2px 6px;
+    font-weight: bolder;
+    background-color: rgb(224 0 0);
+    border: none;
+    box-shadow: 1px -1px 15px 5px rgba(0,0,0,0.18);
+}
+
+.totalProduct{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px){
+.form{
+    margin-left: 3%;
+    width: 310px;
+}
+}

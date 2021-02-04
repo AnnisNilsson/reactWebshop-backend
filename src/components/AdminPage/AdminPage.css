@@ -1,0 +1,15 @@
+.adminPage{
+    margin:20px;
+}
+
+.boxOrders{
+    border:1px solid rgb(141, 141, 141);
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:  5px 5px 5px rgba(0,0,0,0.34);
+    border-radius:5px;
+}
+
+.headinAdmin{
+    text-align: center;
+}

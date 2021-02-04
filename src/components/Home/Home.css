@@ -1,0 +1,25 @@
+.homeImg{
+    width:100%;
+    height:70vh;
+    object-fit: cover;
+}
+
+.home{
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+.homeRow{
+    display:flex;
+    z-index: 1;
+}
+
+.products{
+    padding:100px;
+}
+
+@media only screen and (max-width: 637px){
+    .products{
+        padding:0;
+    }
+}
