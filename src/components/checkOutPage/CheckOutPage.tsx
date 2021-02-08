@@ -13,7 +13,6 @@ interface ICart {
 
 export default function CheckoutPage( props:ICart) {
     const defaultValue: IForm = { name:'', adress: '', city: ''};
-    // const defaultValue: IForm = {firstname: '', lastname:'', address: '', zipcode: "", city: ''};
     const [userForm, setUserForm] = useState(defaultValue);
     const defaultValue2: Array<{ 
         productId:number,

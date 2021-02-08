@@ -8,7 +8,6 @@ interface IFormProps {
 
 export default function Form(props: IFormProps) {
   const defaultValue: IForm = { name:'', adress:'', city: '' };
-  // const defaultValue: IForm = { firstname: '', lastname: '', address:'', zipcode:"", city: '' };
 
   const [userForm, setUserForm] = useState(defaultValue);
 
@@ -35,23 +34,6 @@ export default function Form(props: IFormProps) {
           value={userForm.name}
           onChange={updateUserForm}
         />
-        {/* <label htmlFor="firstname">Ditt fullständiga namn</label>
-        <input
-          type="text"
-          id="firstname"
-          name="firstname"
-          value={userForm.firstname}
-          onChange={updateUserForm}
-        /> */}
-
-        {/* <label htmlFor="lastname">Efternamn</label>
-        <input
-          type="text"
-          id="lastname"
-          name="lastname"
-          value={userForm.lastname}
-          onChange={updateUserForm}
-        /> */}
 
         <label htmlFor="adress">Address</label>
         <input
@@ -61,14 +43,6 @@ export default function Form(props: IFormProps) {
           value={userForm.adress}
           onChange={updateUserForm}
         />
-        {/* <label htmlFor="zipcode">Postnummer</label>
-        <input
-          type="text"
-          name="zipcode"
-          id="zipcode"
-          value={userForm.zipcode}
-          onChange={updateUserForm}
-        /> */}
               <label htmlFor="city">Stad</label>
           <input
           type="text"
