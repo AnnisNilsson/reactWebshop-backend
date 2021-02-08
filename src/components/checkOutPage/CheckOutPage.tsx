@@ -13,7 +13,6 @@ interface ICart {
 
 export default function CheckoutPage( props:ICart) {
     const defaultValue: IForm = { name:'', adress: '', city: ''};
-    // const defaultValue: IForm = {firstname: '', lastname:'', address: '', zipcode: "", city: ''};
     const [userForm, setUserForm] = useState(defaultValue);
     const defaultValue2: Array<{ 
         productId:number,
@@ -41,24 +40,13 @@ export default function CheckoutPage( props:ICart) {
         setUserForm(formValue);
     }
 
-//    function placeOrder(e: MouseEvent<HTMLButtonElement>){
-//         const createOrder = {
-//         // companyId: 88888,
-//         createdBy: JSON.stringify(userForm),
-//         created: moment().format(),
-//         // paymentMethod:'visa',
-//         totalPrice: total,
-//         orderRows: shoppingCart
-//         }
-
 function placeOrder(e: MouseEvent<HTMLButtonElement>){
     const createOrder = {
-    createdBy: JSON.stringify(userForm),
-    created: moment().format(),
-    totalPrice: total,
-    orderRows: shoppingCart
+        customer: userForm,
+        created: moment().format(),
+        totalPrice: total,
+        orderRows: shoppingCart
     }
-
 
     const url : string = 'https://localhost:5001/order'
    
